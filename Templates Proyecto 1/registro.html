@@ -1,0 +1,189 @@
+<!DOCTYPE html PUBLIC>	
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device=width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<script src="https://kit.fontawesome.com/8e488a66dd.js" crossorigin="anonymous"></script>
+	<title>Registro de Usuario</title>
+	<style>
+		h1 {
+			color: black;
+			width: 200px;
+			margin: auto;
+		}
+		input {
+			width: 100%;
+			padding: 3px 20px;
+			box-sizing: border-box;
+			margin: 10px 0px;
+			border: 2px solid black;
+			border-radius: 50px;
+			background-color: lightgrey;
+			color: black;
+		}
+		form label{
+			display: block;
+			color: #000000;
+			font-size: 16px;
+			font-weight: bolder;
+		}
+
+		textarea {
+			-webkit-writing-mode: horizontal-tb !important;
+    		text-rendering: auto;
+    		color: black;
+    		letter-spacing: normal;
+    		word-spacing: normal;
+    		text-transform: none;
+    		text-indent: 0px;
+    		text-shadow: none;
+    		display: inline-block;
+    		text-align: start;
+    		appearance: textarea;
+    		background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    		-webkit-rtl-ordering: logical;
+   			flex-direction: column;
+   			cursor: text;
+    		white-space: pre-wrap;
+   			overflow-wrap: break-word;
+    		font: 400 13.3333px Arial;
+    		margin: 0px;
+    		width: 490px;
+    		height: 203px;
+    		border: 2px solid black;
+			border-radius: 5px;
+			display: block;
+		}
+
+		input:focus {
+			border: 4px solid grey;
+			border-radius: 5px;
+		}
+
+		.container {
+			border-radius: 4px;
+			background-color: rgba(255,255,255,0.5);
+			padding: 20px;
+			width: 500px;
+			margin: auto;
+		}
+
+		select {
+			width: 50%;
+			height: 30px;
+			margin: 3px 0px;
+			background-color: lightgrey;
+			border: 2px solid black;
+			border-radius: 5px;
+		}
+
+		button {
+			background-color: black;
+			border-radius: 5px;
+			color: orange;
+			padding: 6px 10px;
+			cursor: pointer;
+			margin: 0px 200px;
+		}
+
+		button:hover {
+			background-color: grey; 
+		}
+		
+	</style>
+</head>
+<body background="D:\Pictures\Img\images7.jpg">
+	<h1>Registrate!!</h1>
+	<div class="container">
+		<form action="http://127.0.0.1:8000/" method="POST">
+			<label for="nombre">Nombre:</label>
+			<input type="" name="nombre" id="nombre" required/><br>
+			<label for="rubro">Rubro:</label>
+			<select name="rubro" id="rubro" required>
+				<option>Seleccione</option>
+				<option>Accesorios</option>
+				<option>Albañilería</option>
+				<option>Alimentos</option>
+				<option>Carpintería</option>
+				<option>Celulares</option>
+				<option>Cerrajería</option>
+				<option>Corralón</option>
+				<option>Cortador de Pasto</option>
+				<option>Decoración</option>
+				<option>Electricidad</option>
+				<option>Herrería</option>
+				<option>Indumentaria</option>
+				<option>Jardinería</option>
+				<option>Joyería</option>
+				<option>Kiosco</option>
+				<option>Mercería</option>
+				<option>Peluquería/Barbería</option>
+				<option>Perfumería</option>
+				<option>Pinturería</option>
+				<option>Plomería</option>
+				<option>Regalería</option>
+				<option>Tapizado/Talabartería</option>
+				<option>Vehículos</option>
+				<option>Otro</option>
+			</select>
+			<label for="direccion">Dirección:</label>
+			<input type="" name="direccion" id="direccion" required/><br>
+			<label for="direccion">Localidad:</label>
+			<select name="localidad" id="localidad" required>
+				<option>Seleccione</option>
+				<option>Avia Terai</option>
+				<option>Barranqueras</option>
+				<option>Charata</option>
+				<option>Colonia Benitez</option>
+				<option>El Sauzalito</option>
+				<option>Fontana</option>
+				<option>Fuerte Esperanza</option>
+				<option>Gancedo</option>
+				<option>Gral Pinedo</option>
+				<option>Gral San Martín</option>
+				<option>Gral Vedia</option>
+				<option>Hermoso Campo</option>
+				<option>Isla del Cerrito</option>
+				<option>JJ Castelli</option>
+				<option>La Leonesa</option>
+				<option>Las Breñas</option>
+				<option>Machagai</option>
+				<option>Misión Nueva Pompeya</option>
+				<option>Pampa del Indio</option>
+				<option>Puerto Tirol</option>
+				<option>Quitilipi</option>
+				<option>Resistencia</option>
+				<option>Roque Sáenz Peña</option>
+				<option>Villa Ángela</option>
+				<option>Villa Río Bermejito</option>
+			</select><br>
+			<label for="telefono">Tel/Cel:</label>
+			<input type="" name="telefono" id="telefono"/><br>
+			<label for="email">E-mail:</label>
+			<input type="email" name="email" id="email" required/><br>
+			<label for="contraseña">Contraseña:</label>
+			<input type="password" name="password" id="password" required/><br>
+			<label for="red_social1">Facebook:</label>
+			<input type="url" name="url" id="url"/><br>
+			<label for="red_social2">Instagram:</label>
+			<input type="url" name="url" id="url"/><br>
+			<label for="red_social3">Twitter:</label>
+			<input type="url" name="url" id="url"/><br>
+			<label for="">¿Qué desea registrar?</label>
+			<select name="seleccione" id="seleccione" required>
+				<option>Seleccione</option>
+				<option>Negocio</option>
+				<option>Producto/Oficio</option>
+			</select>
+			<label for= "Descripcion">Descripción:</label><br>
+			<textarea id="subject" name="subject" placeholder="Escribe aquí.." style="color: black"></textarea>
+			<br>
+			<button type="submit">Registrarse</button>
+		</form>
+	</div>
+
+</body>
+</html>
